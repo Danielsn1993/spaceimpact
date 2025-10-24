@@ -2891,10 +2891,10 @@ function gameLose() {
     mainCtx.fillStyle = "#aad69c";
     mainCtx.font = "bold 60px Silkscreen"
     mainCtx.textAlign = "center";
-    mainCtx.fillText("Game Over!", 420, 120);
+    mainCtx.fillText("VOCÊ MORREU!", 420, 120);
     mainCtx.fillText("Score: " + playerScore.toString().padStart(5, "0"), 420, 220);
     mainCtx.font = "bold 50px Silkscreen"
-    mainCtx.fillText("Better Luck Next Time", 420, 320);
+    mainCtx.fillText("BOA SORTE NA PRÓXIMA VEZ", 420, 320);
     mainCtx.restore();
     exitButton.style.display = "block";
     pauseButton.style.visibility = "hidden";
@@ -2956,5 +2956,6 @@ exitButton.addEventListener("click", gameStart);
 window.addEventListener("resize", ()=>{
     playButton.style.top = `${bgCanvas.getBoundingClientRect().height - 70}`+"px";
     exitButton.style.top = `${bgCanvas.getBoundingClientRect().height - 70}`+"px";
+
 
 })
